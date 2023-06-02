@@ -93,8 +93,6 @@ public class ArrayTasksTest {
         assertArrayEquals(expectedArr.getArr(), arrayTasks.sortRaggedArray(arr.getArr()),
                 "I think, something went wrong with sorting ragged array implementation");
     }
-
-
     private static Stream<Arguments> totalSumTestProvider() {
         return getIntArraysStream(4, 100, 1000)
                 .map(arr -> Arguments.of(arr, Arrays.stream(arr).sum()));
